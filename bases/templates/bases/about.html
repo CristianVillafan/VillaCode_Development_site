@@ -1,0 +1,51 @@
+{% extends 'base/base.html' %}
+
+{% block content_body %}
+    {% block content_header %}{% endblock %}
+
+    <section class="bg-light py-5">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Somos una nueva empresa enfocada al desarrollo web</h2><br>
+                <div class="row gx-5 justify-content-center mb-4">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5 justify-content-center">
+                                <div class="small text-uppercase fw-bold text-muted mb-4">¿Que servicios ofrecemos?</div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2" style="text-align: left;">
+                                        Ofrecemos paquetes de sitios y aplicaciones web (estaticos, dinamicos, e-commerce, gestión de contenido, entre muchas otras mas).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5 justify-content-center">
+                                <div class="small text-uppercase fw-bold text-muted mb-4">¡Proximamente!</div>
+                                <ul class="list-unstyled mb-4" style="text-align: left;">
+                                    <li class="mb-2">
+                                        Proximamente tendremos servicios de desarrollo de aplicaciones nativas y multiplataforma (escritorio, tablets y moviles).
+                                    </li>
+                                    <li class="mb-2">
+                                        Framework para el desarrollo web front-end con HTML, CSS y Js.
+                                    </li>
+                                    <li class="mb-2">
+                                        Plantillas GRATUITAS y de PAGA para desarrollo web.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 m-2 justify-content-center">
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg" href="{% url 'bases:contact' %}">¡Contactanos!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -5,8 +5,6 @@ from django.views import generic
 from .models import Contact
 from .forms import ContactForm
 from django.urls import reverse_lazy
-from django.contrib import messages
-
 
 # Create your views here.
 class Home(generic.TemplateView):
@@ -28,3 +26,6 @@ class ContactView(SuccessMessageMixin, generic.CreateView):
 
     def form_valid(self, form):
         return super().form_valid(form)
+    
+class AboutView(generic.TemplateView):
+    template_name='bases/about.html'
